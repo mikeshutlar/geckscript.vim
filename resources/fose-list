@@ -1,0 +1,188 @@
+AddSpellNS
+Ceil
+CompareNames
+con_CloseAllMenus
+con_GetINISetting
+con_LoadGame
+con_QuitGame
+con_RefreshINI
+con_SetCameraFOV
+con_SetGameSetting
+con_SetINISetting
+con_SetVel
+con_Save
+con_SaveINI
+DebugPrint	dbprintc
+DisableControl		dc
+DisableKey	dk
+EnableControl		ec
+EnableKey	ek
+Exp
+Floor		flr
+fmod
+GetAltControl
+GetArmorAR		GetArmorArmorRating
+GetAttackDamage		GetDamage
+GetBaseObject		gbo
+GetControl
+GetCrosshairRef
+GetDebugMode		GetDbMode
+GetEquippedCurrentHealth	GetEqCurHealth
+GetEquippedObject	GetEqObj
+GetEquipType
+GetFirstRef
+GetFirstRefInCell
+GetFOSEVersion
+GetFOSERevision
+GetFOSEBeta
+GetGameLoaded
+GetGameRestarted
+GetHealth		GetBaseHealth
+GetHotkeyItem
+GetKeyPress	gkp
+GetLinkedDoor
+GetModIndex
+GetMouseButtonPress
+GetNextRef
+GetNumericGameSetting
+GetNumericIniSetting
+GetNumKeysPressed	gnkp
+GetNumLoadedMods
+GetNumRefs
+GetNumRefsInCell
+GetNumMouseButtonsPressed	gmbp
+GetObjectEffect		GetEnchantment
+GetOpenKey		GetKey
+GetParentCell		gpc
+GetParentWorldspace	gpw
+GetRepairList		grl
+GetScript
+GetSourceModIndex
+GetTeleportCell
+GetType		GetObjectType
+GetUIFloat
+GetValue		GetItemValue
+GetWeight
+GetWeaponActionPoints	GetAP
+GetWeaponAimArc		GetAimArc
+GetWeaponAmmo		GetAmmo
+GetWeaponAmmoUse	GetAmmoUse
+GetWeaponAnimAttackMult		GetAnimAttackMult
+GetWeaponAnimJamTime		GetAnimJamTime
+GetWeaponAnimMult	GetAnimMult
+GetWeaponAnimReloadTime		GetAnimReloadTime
+GetWeaponAnimShotsPerSec	GetAnimShotsPerSec
+GetWeaponAttackAnimation	GetAttackAnim
+GetWeaponBaseVATSChance		GetVATSChance
+GetWeaponClipRounds	GetClipSize
+GetWeaponCritChance	GetCritPerc
+GetWeaponCritDamage	GetCritDam
+GetWeaponCritEffect	GetCritEffect
+GetWeaponFireDelayMin		GetFireDelayMin
+GetWeaponFireDelayMax		GetFireDelayMax
+GetWeaponFireRate	GetFireRate
+GetWeaponHandGrip	GetHandGrip
+GetWeaponHasScope
+GetWeaponIsAutomatic	GetIsAutomatic
+GetWeaponLimbDamageMult		GetLimbDamageMult
+GetWeaponMaxRange	GetMaxRange
+GetWeaponMinRange	GetMinRange
+GetWeaponMinSpread	GetMinSpread
+GetWeaponNumProjectiles		GetNumProj
+GetWeaponProjectile	GetWeapProj
+GetWeaponReach		GetReach
+GetWeaponReloadAnim	GetReloadAnim
+GetWeaponResistType		GetWeaponResist
+GetWeaponRumbleDuration		GetRumbleDuration
+GetWeaponRumbleLeftMotor	GetRumbleLeft
+GetWeaponRumbleRightMotor	GetRumbleRight
+GetWeaponRumbleWavelength	GetRumbleWavelen
+GetWeaponSightFOV	GetSightFOV
+GetWeaponSightUsage	GetSightUsage
+GetWeaponSkill
+GetWeaponSpread		GetSpread
+GetWeaponType		GetWeapType
+Goto
+HoldKey		hk
+IsClonedForm	IsCloned
+IsControl
+IsControlDisabled
+IsControlPressed
+IsFormValid
+IsKeyDisabled
+IsKeyPressed
+IsModLoaded
+IsPowerArmor		IsPA
+IsReference
+IsScripted
+Label
+LeftShift
+ListAddReference	ListAddRef
+ListAddForm
+ListGetCount
+ListGetNthForm
+ListGetFormIndex
+ListRemoveForm
+ListRemoveNthForm	ListRemoveNth
+ListReplaceForm
+ListReplaceNthForm	ListReplaceNth
+Log10
+LogicalAnd
+LogicalNot
+LogicalOr
+LogicalXor
+MenuHoldKey	mhk
+MenuReleaseKey		mrk
+MenuTapKey	mtk
+PrintActiveTile
+PrintToConsole		printc
+ReleaseKey	rk
+RemoveScript
+RightShift
+SetAltControl
+SetAttackDamage		SetDamage
+SetBaseItemValue	SetValue
+SetControl
+SetDebugMode		dbmode
+SetEquippedCurrentHealth	SetEqCurHealth
+SetHealth	SetObjectHealth
+SetIsControl
+SetIsPowerArmor		SetIsPA
+SetName
+SetNumericGameSetting
+SetNumericIniSetting
+SetOpenKey	SetKey
+SetRepairList
+SetScript
+SetUIFloat
+SetUIString
+SetWeaponActionPoints		SetAP
+SetWeaponAimArc		SetAimArc
+SetWeaponAmmo		SetAmmo
+SetWeaponAmmoUse	SetAmmoUse
+SetWeaponAnimAttackMult		SetAnimAttackMult
+SetWeaponAnimMult	SetAnimMult
+SetWeaponAttackAnimation	SetAttackAnim
+SetWeaponBaseVATSChance		SetVATSChance
+SetWeaponClipRounds	SetClipSize
+SetWeaponCritChance	SetCritPerc
+SetWeaponCritDamage	SetCritDamage
+SetWeaponCritEffect	SetCritEffect
+SetWeaponHandGrip	SetHandGrip
+SetWeaponIsAutomatic	SetIsAutomatic
+SetWeaponLimbDamageMult		SetLimbDamageMult
+SetWeaponMaxRange	SetMaxRange
+SetWeaponMinRange	SetMinRange
+SetWeaponMinSpread	SetMinSpread
+SetWeaponNumProjectiles		SetNumProj
+SetWeaponProjectile	SetProjectile
+SetWeaponReach
+SetWeaponReloadAnim	SetReloadAnim
+SetWeaponSpread		SetSpread
+SetWeaponSightFOV	SetSightFOV
+SetWeaponSightUsage	SetSightUsage
+SetWeaponType
+SetWeight
+TapControl	tc
+TapKey		tk
+TempCloneForm
