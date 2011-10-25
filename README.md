@@ -16,8 +16,8 @@ Enables Vim's syntax highlighting and code completion for GECK Script, the scrip
 ### If using [Pathogen](http://www.vim.org/scripts/script.php?script_id=2332):
 
 Install to the bundle directory, e.g.:
-    ```bash
-    cd ~/.vim/bundle && git clone https://someurl/repo.git
+    ```
+    cd ~/.vim/bundle && git clone --depth 1 git://github.com/infectedsoundsystem/geckscript.vim.git
     ```
 
 
@@ -39,7 +39,7 @@ Windows:
 ## Usage
 
 Start saving your GECK scripts with the .gek file extension (e.g. *mygroovyscript.gek*), and Vim will automatically recognise them and start highlighting. You can also use:
-    ```vimscript
+    ```
     set ft=geckscript
     ```
 
@@ -47,7 +47,7 @@ To enable code completion, either:
 
 * Use [neocomplcache](http://www.vim.org/scripts/script.php?script_id=2620) (recommended)
 * Or, [run the following when editing a script](http://vimdoc.sourceforge.net/htmldoc/insert.html#ft-syntax-omni):
-    ```vimscript
+    ```
     setlocal omnifunc=syntaxcomplete#Complete
     ```
 
@@ -58,8 +58,8 @@ If neocomplcache is used, indications will be given as to whether a command is b
 
 Something incorrect or missing, or got an improvement?
 
-* Raise an issue on GitHub
-* Or fork the repository, edit the file(s), and send a pull request
+* Raise an [issue](https://github.com/infectedsoundsystem/geckscript.vim/issues)
+* Or [fork the repository](https://github.com/infectedsoundsystem/geckscript.vim/fork), edit the file(s), and send a pull request
 
 
 ## License
