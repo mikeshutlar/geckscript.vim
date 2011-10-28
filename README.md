@@ -59,7 +59,7 @@ If neocomplcache is used, indications will be given as to whether a command is b
 Something incorrect or missing, or got an improvement?
 
 * Raise an [issue](https://github.com/infectedsoundsystem/geckscript.vim/issues)
-* Or [fork the repository](https://github.com/infectedsoundsystem/geckscript.vim/fork), edit the file(s), and send a pull request
+* Or fork the repository, edit the file(s), and send a pull request
 
 
 ## License
