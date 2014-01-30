@@ -5,7 +5,7 @@
 " Licence: ISC
 
 " This version was updated for by Odessa with
-" NVSE commands from v2b9 -> v4b2 and NX added
+" NVSE commands from v2b9 -> v4b2 and NX and MCM extenders added
 " 30 January 2014
 
 if exists("b:current_syntax")
