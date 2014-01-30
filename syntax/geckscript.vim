@@ -1,8 +1,12 @@
 " Vim syntax file
 " Language: GECK Script (GECKScript)
-" Maintainer: Mike Shutlar (iFSS)
-" Latest Revision: 24 October 2011
+" Original Creator: Mike Shutlar (iFSS)
+" Their Revision: 24 October 2011
 " Licence: ISC
+
+" This version was updated for by Odessa with
+" NVSE commands from v2b9 -> v4b2 and NX added
+" 30 January 2014
 
 if exists("b:current_syntax")
     finish
@@ -21,10 +25,10 @@ syn region geckComment start=";" end="$" keepend contains=geckToDo
 syn region geckString start=/"/ end=/"/
 
 syn keyword geckToDo contained TODO todo Todo ToDo FIXME XXX NOTE
-syn keyword geckType short long float ref reference
+syn keyword geckType short int long float ref reference
 syn keyword geckConditional if else elseif endif If Else Elseif Endif
-syn keyword geckOperator set to
-syn keyword geckOtherKeywords Player player
+syn keyword geckOperator set to Set To let Let eval Eval
+syn keyword geckSpecialKeywords return Player player PlayerREF PlayerRef
 syn keyword geckScriptname ScriptName scriptname scn
 syn keyword geckBlock Begin End
 
@@ -818,10 +822,21 @@ syn keyword geckFOSEFunction
     \   TempCloneForm
 
 
-syn keyword geckFOSERepeat Label Goto GoTo
+syn keyword geckFOSERepeat
+    \   Label    label
+    \   Goto    GoTo    goto
+
+syn keyword geckNVSERepeat 
+    \   While   while
+    \   Loop    loop
+    \   ForEach foreach
+    \   Continue continue
+    \   Break   break
+    \   Call    call
+    \   Function function
 
 
-" @ the NVSE folks - where's the docs?!
+" NVSE up to v4b2
 syn keyword geckNVSEFunction
     \   BuildRef
     \   ClearBit
@@ -858,7 +873,200 @@ syn keyword geckNVSEFunction
     \   SetWeaponFlags2
     \   SetWeaponLongBursts
     \   SortUIListBox
+    \   GetWeaponItemModEffect
+    \   SetWeaponItemModEffect
+    \   GetWeaponItemModValue1
+    \   GetWeaponItemModValue2
+    \   SetWeaponItemModValue1
+    \   SetWeaponItemModValue2
+    \   HasOwnership
+    \   IsOwned
+    \   SetOwningFactionRequiredRank
+	\   GetDialogueSubject
+	\   GetDialogueTarget
+	\   GetDialogueSpeaker
+	\   SetPackageLocationReference
+	\   GetAgeClass
+	\   RemoveMeIR 
+	\   CopyIR
+    \   CreateTempRef 
+    \   GetFirstRefForItem
+    \   GetNextRefForItem
+    \   AddItemOwnership
+    \   AddItemHealthPercentOwner
+    \   GetTokenValue GetTV
+    \   SetTokenValue SetTV
+    \   GetTokenRef GetTr
+    \   SetTokenRef SetTR
+    \   SetTokenValueAndRef SetTVR
+    \   GetPaired
+    \   GetRespawn
+    \   SetRespawn
+    \   GetPermanent
+    \   SetPermanet
+    \   GetBaseForm
+    \   IsRefInList
+    \   TempCloneForm
+    \   ListGetFormIndex
+    \   SetOpenKey
+    \   GetCurrentPackage	
+    \   GetPackageLocation	
+    \   GetPackageCount
+    \   GetNthPackage
+    \   SetNthPackage
+    \   AddPackageAt
+    \   RemovePackageAt
+    \   RemoveAllPackages
+    \   ClearOpenKey
+    \   SetPackageTargetReference
+    \   SetPackageTargetCount
+    \   GetPackageTargetCount
+    \   SetPackageLocationRadius
+    \   GetPackageLocationRadius
+    \   SetEyes
+    \   GetEyes
+    \   SetHair
+    \   GetHairLength
+    \   SetHairLength
+    \   GetHairColor
+    \   SetHairColor
+    \   GetNPCWeight
+    \   SetNPCWeight
+    \   GetNPCHeight
+    \   SetNPCHeight
+    \   GetVariable
+    \   HasVariable
+    \   GetRefVariable
+    \   GetArrayVariable
+    \   CompareScripts
+    \   ResetAllVariables
+    \   GetNumExplicitRefs
+    \   GetNthExplicitRef
+    \   RunScript
+    \   GetCurrentScript
+    \   GetCallingScript
+    \   ToString tostring
+    \   Print   print
+    \   TestExpr    testexpr
+    \   TypeOf   typeof
+    \   GetUserTime
+    \   GetModLocalData
+    \   SetModLocalData
+    \   SetFunctionValue
+    \   GetRace
+    \   GetRaceName
+    \   con_SCOF Con_SCOF
+    \   PickOneOf
+    \   kMessage_DeleteGameName
+    \   kMessage_RenameGameName
+    \   kMessage_RenameNewGameName
+    \   ar_Construct
+	\	ar_Size
+	\   ar_Dump
+    \	ar_DumpID
+	\	ar_Erase
+	\	ar_Sort
+	\	ar_CustomSort
+	\	ar_SortAlpha
+	\	ar_Find
+	\	ar_First
+	\	ar_Last
+	\	ar_Next
+	\	ar_Prev
+	\	ar_Keys
+	\	ar_HasKey
+	\	ar_BadStringIndex
+	\	ar_BadNumericIndex
+	\	ar_Copy
+	\	ar_DeepCopy
+	\	ar_Null
+	\	ar_Resize
+	\	ar_Insert
+	\	ar_InsertRange
+	\	ar_Append
+	\	ar_List
+	\	ar_Map
+	\	ar_Range
+	\   sv_Destruct
+	\   sv_Construct
+	\	sv_Set
+	\	sv_Compare
+	\	sv_Length
+	\	sv_Erase
+	\	sv_SubString
+	\	sv_ToNumeric
+	\	sv_Insert
+	\	sv_Count
+	\	sv_Find
+	\	sv_Replace
+	\	sv_GetChar
+	\	sv_Split
+	\	sv_Percentify
+	\	sv_ToUpper
+	\	sv_ToLower
+	\	IsLetter
+	\	IsDigit
+	\	IsPrintable
+	\	IsPunctuation
+	\	IsUpperCase
+	\	CharToAscii
+	\	ToUpper
+	\	ToLower
+	\	AsciiToChar
+	\	NumToHex
+	\	ToNumber
+	\	GetNthModName
+	\	GetName
+	\	GetKeyName
+	\	GetFormIDString
+	\	GetRawFormIDString
+	\	GetFalloutDirectory
+	\	ActorValueToString
+	\	ActorValueToStringC
+	\	GetModelPath
+	\	GetIconPath
+	\	GetBipedModelPath
+	\	GetBipedIconPath
+	\	GetTexturePath
+	\	SetModelPathEX
+	\	SetIconPathEX
+	\	SetBipedIconPathEX
+	\	SetBipedModelPathEX
+	\	SetTexturePath
+	\	GetNthFactionRankName
+	\	SetNthFactionRankNameEX
+	\	GetStringGameSetting
+	\	SetStringGameSettingEX
 
+    
+syn keyword geckNXFunction
+    \ NX_GetVersion
+    \ NX_IsUsingSkeleton
+    \ NX_IsInList
+    \ NX_SetEVFl
+    \ NX_GetEVFl
+    \ NX_SetEVFo
+    \ NX_GetEVFo
+    \ NX_GetConversationPartner
+    \ NX_ClrEVFl
+    \ NX_ClrEVFo
+    \ NX_GetQVEFl
+    \ NX_SetEVSt
+    \ NX_GetEVSt
+    \ NX_GetEVFlAr
+    \ NX_GetEVFoAr
+    \ NX_GetEVStAr
+    
+syn keyword geckMCMFunction
+    \   GetModINISetting GetModINI
+    \   SetModINISetting SetModINI
+    \   GetMCMFloat 
+    \   SetMCMFloat 
+    \   SetMCMString 
+    \   SetMCMFloatMass 
+    \   SetMCMStringMass 
+    \   SetMCMModList 
+    \   GetMCMListWidth
 
 if !exists("did_make_geckscript_inits")
 
@@ -874,14 +1082,17 @@ if !exists("did_make_geckscript_inits")
     hi def link geckType Type
     hi def link geckConditional Conditional
     hi def link geckOperator Operator
-    hi def link geckOtherKeywords Keyword
+    hi def link geckSpecialKeywords Special
     hi def link geckScriptname Special
     hi def link geckBlock Conditional
     hi def link geckBlockType Special
 
     hi def link geckFunction Function
     hi def link geckFOSEFunction Function
-    hi def link geckFOSERepeat Repeat
     hi def link geckNVSEFunction Function
+    hi def link geckNXFunction Function
+    hi def link geckMCMFunction Function
+    hi def link geckFOSERepeat Repeat
+    hi def link geckNVSERepeat Repeat
 
 endif
