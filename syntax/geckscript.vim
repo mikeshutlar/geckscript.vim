@@ -4,7 +4,7 @@
 " Their Revision: 24 October 2011
 " Licence: ISC
 
-" This version was updated for by Odessa with
+" This version was updated with
 " NVSE commands from v2b9 -> v4b2 and NX and MCM extenders added
 " 30 January 2014
 
